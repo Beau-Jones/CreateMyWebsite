@@ -1,12 +1,11 @@
-#heading {
-    font-size: 4em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
+
+a:hover {
     color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
-p {
-    font-size: 22px;
+body {
+    width: 1500px;
 }
 
 ul li {
@@ -17,32 +16,6 @@ ul li {
 ul > li {
     font-style: italic;
 }
-
-a:hover {
-    color: rgb(255, 0, 0);
-    background-color: rgb(0, 0, 0);
-}
-
-ul {
-    background: linear-gradient(120deg, white 0%, red 100%);
-    padding: 20px 20px;
-}
-
-#intro {
-    background-color:rgb(173, 173, 173);
-    padding: 30px 30px;
-    margin: 30px 30px;
-    text-align: center;
-    border: red dotted;
-
-}
-
-
-body {
-    width: 1500px;
-}
-
-
 
 /* Below is the navigation bar styles */
 
@@ -93,7 +66,6 @@ nav ul::after {
 	color: yellow;	
 }
 
-
 /* This is the area for two column pages with sections and asides */
 
 main section {
@@ -103,5 +75,5 @@ main section {
 
 main aside {
 	border: 5px solid #000000;
-	text-align: center;
+    text-align: center;
 }
