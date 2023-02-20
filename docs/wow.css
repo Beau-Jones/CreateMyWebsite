@@ -1,12 +1,12 @@
 #heading {
-    font-size: 4em;
+    font-size: 3em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color: rgb(255, 0, 0);
 }
 
 p {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 ul li {
@@ -23,7 +23,7 @@ a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-ul {
+main ul {
     background: linear-gradient(120deg, white 0%, red 100%);
     padding: 20px 20px;
 }
@@ -39,7 +39,8 @@ ul {
 
 
 body {
-    width: 1500px;
+    max-width: 1500px;
+
 }
 
 
@@ -60,7 +61,7 @@ nav ul li {
 nav ul li a {
 	display: block;
 	text-align: center;
-	width: 300px;
+	width: 250px;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	background-color: #800000;
@@ -94,14 +95,3 @@ nav ul::after {
 }
 
 
-/* This is the area for two column pages with sections and asides */
-
-main section {
-	border: 5px solid #000000;
-	float: left;
-}
-
-main aside {
-	border: 5px solid #000000;
-	text-align: center;
-}

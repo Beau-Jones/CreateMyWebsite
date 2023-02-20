@@ -5,7 +5,8 @@ a:hover {
 }
 
 body {
-    width: 1500px;
+    max-width: 1500px;
+	width: 98%;
 }
 
 ul li {
@@ -28,12 +29,14 @@ nav ul {
 
 nav ul li {
 	float: left;
+	width: 20%;
+	justify-content: center;
 }
 
 nav ul li a {
 	display: block;
 	text-align: center;
-	width: 300px;
+	/* width: 250px; */
 	padding-top: 1em;
 	padding-bottom: 1em;
 	background-color: #800000;
@@ -68,12 +71,49 @@ nav ul::after {
 
 /* This is the area for two column pages with sections and asides */
 
+/* Main elements with flex container, last rule is for a scalable image*/
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 main section {
-	border: 5px solid #000000;
-	float: left;
+	flex-basis: 50%;
+	margin: 0px 2em;
 }
 
 main aside {
-	border: 5px solid #000000;
-    text-align: center;
+	flex-basis: 50%;
+	margin: 0 2em;
+}
+
+#talentTree {
+	width: 60%;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0 10px 10px;
+	padding-left: 35px;
+}
+
+/* Media query to collapse into one row at 400 pixels */
+
+@media only screen and (max-width: 400px)
+{
+	main {
+		flex-direction: column;
+	}
+	
+	main section {
+		order: 1;
+		float: none;
+	}
+
+	main aside {
+		order: 2;
+		float: none;
+		padding-top: 20px;
+	}
 }
