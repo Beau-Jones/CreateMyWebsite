@@ -4,7 +4,7 @@ a:hover {
 }
 
 body {
-    width: 1500px;
+    width: 100%;
 }
 
 ul li {
@@ -63,5 +63,61 @@ nav ul::after {
 
 .current {
 	color: yellow;	
+}
+
+/* Adding grid layout to main elements of webpage */
+
+main {
+	height: 1200px;
+	max-width: 60%;
+	align-items: center;
+	justify-items: center;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 15px;
+	grid-template-areas:
+	"marks bm"
+	"ele balance"
+	"shadow devastation"
+	"mage warlock"
+}
+
+div img {
+	height: 250px;
+	width: 100%;
+}
+
+#marks {
+	grid-area: marks;
+}
+
+#bm {
+	grid-area: bm;
+}
+
+#ele {
+	grid-area: ele;
+}
+
+#balance {
+	grid-area: balance;
+}
+
+#shadow {
+	grid-area: shadow;
+}
+
+#devastation {
+	grid-area: devastation;
+}
+
+#mage {
+	grid-area: mage;
+}
+
+#warlock {
+	grid-area: warlock;
 }
 
