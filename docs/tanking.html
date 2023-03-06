@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tanking.css">
+    <link rel="stylesheet" href="styles/tanking.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
     <title>Tanking</title>
 </head>
 <body>
 
     <!-- Navigation Bar -->
+    <nav id="mobile_menu">
+    </nav>
     <nav id="nav_menu">
 
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="meleedamage.html">Melee DPS</a></li>
-            <li><a href="rangedamage.html">Range DPS</a></li>
-            <li><a href="healing.html">Healing</a></li>
-            <li><a href="tanking.html">Tanking</a>
-            
+            <li><a>Damage</a>
                 <ul>
-                    <li><a href="#">Threat</a></li>
-                    <li><a href="#">Armor</a></li>
-                    <li><a href="#">AoE</a></li>
-                    <li><a href="#">Taunting</a></li>
+                    <li><a href="meleedamage.html">Melee</a></li>
+                    <li><a href="rangedamage.html">Ranged</a></li>
                 </ul>
-    
             </li>
+            <li><a href="healing.html">Healing</a></li>
+            <li><a id="current" href="tanking.html">Tanking</a></li>
+            
+
+    
 
         </ul>
 

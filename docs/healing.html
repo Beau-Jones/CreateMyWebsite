@@ -4,33 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="healing.css">
+    <link rel="stylesheet" href="styles/healing.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
     <title>Healing</title>
 </head>
 <body>
 
     <!-- Navigation Bar -->
+    <nav id="mobile_menu">
+    </nav>
     <nav id="nav_menu">
 
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="meleedamage.html">Melee DPS</a></li>
-            <li><a href="rangedamage.html">Range DPS</a></li>
-            <li><a href="healing.html">Healing</a></li>
-            <li><a href="tanking.html">Tanking</a>
-            
+            <li><a>Damage</a>
                 <ul>
-                    <li><a href="#">Threat</a></li>
-                    <li><a href="#">Armor</a></li>
-                    <li><a href="#">AoE</a></li>
-                    <li><a href="#">Taunting</a></li>
+                    <li><a href="meleedamage.html">Melee</a></li>
+                    <li><a href="rangedamage.html">Ranged</a></li>
                 </ul>
-    
             </li>
-
+            <li><a id="current" href="healing.html">Healing</a></li>
+            <li><a href="tanking.html">Tanking</a></li>
         </ul>
 
     </nav>
     
+    <table>
+            <theader>
+                <tr>
+                    <th>Class</th>
+                    <th>Specialization</th>
+                    <th>Strengths +</th>
+                    <th>Weaknesses -</th>
+                </tr>
+            </theader>
+        <tbody>
+            <tr>
+                <td class="center">Paladin</td>
+                <td class="center">Holy</td>
+                <td>High single target healing</td>
+                <td>Low healing throughput</td>
+            </tr>
+
+            <tr>
+                <td class="center">Shaman</td>
+                <td class="center">Restoration</td>
+                <td>Strong raid healing</td>
+                <td>Low single target healing</td>
+            </tr>
+
+            <tr>
+                <td class="center">Druid</td>
+                <td class="center">Restoration</td>
+                <td>Healing over time</td>
+                <td>Low burst heals</td>
+            </tr>
+
+            <tr>
+                <td class="center">Monk</td>
+                <td class="center">Mistweaver</td>
+                <td>High single target healing</td>
+                <td>low raid healing</td>
+            </tr>
+
+            <tr>
+                <td class="center">Priest</td>
+                <td class="center">Holy</td>
+                <td>Great overall healer</td>
+                <td>High skill cap</td>
+            </tr>
+
+            <tr>
+                <td class="center">Priest</td>
+                <td class="center">Discipline</td>
+                <td>High damage mitigation</td>
+                <td>Low throughput</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
+
+
+
+
 </html>

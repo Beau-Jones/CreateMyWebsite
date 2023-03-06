@@ -1,0 +1,7 @@
+"When viewing on a mobile device, the navigation menu rolls over and eventually takes up the whole screen before resizing. I think this takes up too much space and takes away from the main character information."
+
+- Added a slicknav for a mobile menu on each web page.
+
+"highlighting what page the user is on would make it more user friendly."
+
+- Added a different text color to nav item when on that page.

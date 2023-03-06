@@ -1,0 +1,118 @@
+
+a:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(149, 149, 149);
+}
+
+body {
+    max-width: 1285px;
+	margin: auto;
+}
+
+ul li {
+    font-size: 2em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+ul > li {
+    font-style: italic;
+}
+
+/* Below is the navigation bar styles */
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	text-align: center;
+	width: 300px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+nav ul li ul li {
+	float: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#current {
+	color: rgb(0, 0, 0);
+}
+
+/* Table CSS */
+
+table {
+	border: solid 1px black;
+	border-collapse: collapse;
+	width: 93.5%;
+	margin-top: 50px;
+}
+
+th {
+	border: solid 1px black;
+	background: linear-gradient(90deg, red 0%, orange 16.66%, yellow 33.33%, green 49.99%, lightblue 66.66%, indigo 83.33%, violet 100%);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 2em;
+	display: table-cell;
+	
+}
+
+td {
+	border: solid 1px black;
+	display: table-cell;
+	background-color: rgb(173, 173, 173);
+	font-size: 1.5em;
+	padding: 0.25em
+}
+
+.center {
+	text-align: center;
+}
+
+
+#mobile_menu {
+	display: none;
+}
+
+
+@media screen and (max-width: 1200px)
+{
+	#nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000 !important;	
+	}
+
+}

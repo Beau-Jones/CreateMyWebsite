@@ -1,12 +1,13 @@
 
 a:hover {
     color: rgb(255, 0, 0);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(149, 149, 149);
 }
 
 body {
-    max-width: 1500px;
+    max-width: 1285px;
 	width: 98%;
+	margin: auto;
 }
 
 ul li {
@@ -29,14 +30,12 @@ nav ul {
 
 nav ul li {
 	float: left;
-	width: 20%;
-	justify-content: center;
 }
 
 nav ul li a {
 	display: block;
 	text-align: center;
-	/* width: 250px; */
+	width: 310px;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	background-color: #800000;
@@ -65,8 +64,12 @@ nav ul::after {
 	clear: both;
 }
 
-.current {
-	color: yellow;	
+#current {
+	color: rgb(0, 0, 0);		
+}
+
+#current2 {
+	color: rgb(0, 0, 0);	
 }
 
 /* This is the area for two column pages with sections and asides */
@@ -74,6 +77,7 @@ nav ul::after {
 /* Main elements with flex container, last rule is for a scalable image*/
 
 main {
+	font-family: Montserrat;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -98,7 +102,27 @@ main aside {
 	padding-left: 35px;
 }
 
-/* Media query to collapse into one row at 400 pixels */
+#mobile_menu {
+	display: none;
+}
+
+
+/* Media query to collapse into one row at 400 pixels and give mobile menu at 1200px*/
+
+@media screen and (max-width: 1265px)
+{
+	#nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000 !important;	
+	}
+
+}
+
 
 @media only screen and (max-width: 400px)
 {
