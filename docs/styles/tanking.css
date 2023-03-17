@@ -1,6 +1,8 @@
 
+/* Style for lists including nav, body and hover */
+
 a:hover {
-    color: rgb(255, 0, 0);
+    color: rgba(34,193,195,1);
     background-color: rgb(149, 149, 149);
 }
 
@@ -37,10 +39,11 @@ nav ul li a {
 	width: 300px;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	background-color: #800000;
+	background-color: rgba(253,187,45,1);
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
+	border-radius: 50%;
 }
 
 nav ul li ul {
@@ -72,7 +75,86 @@ nav ul::after {
 	display: none;
 }
 
-@media screen and (max-width: 1200px)
+
+/* CSS for content above main and below nav, heading */
+
+div h1 {
+	font-style: italic;
+	font-size: 3em;
+	padding: 1em;
+	background-color: rgba(253,187,45,1);
+}
+
+
+div ul {
+	background-color: rgba(34,193,195,1);
+	border: 4px double black;
+}
+
+
+/* CSS for Section and Aside elements of Main element */
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+main section {
+	flex-basis: 50%;
+	margin: 0px 2em;
+}
+
+main aside {
+	flex-basis: 50%;
+	margin: 0 2em;
+	background-color:seashell
+}
+
+section {
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	border: 2px dotted black;
+}
+
+section h1 {
+	text-align: center;
+	font-size: 2.5em
+}
+
+section p {
+	font-size: 1.5em;
+	padding: 1em;
+}
+
+aside {
+	background: rgba(253,187,45,1);
+	background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 100%);
+	border: 2px dotted black;
+}
+
+aside h1 {
+	text-align: center;
+	font-size: 2.5em
+}
+
+img {
+	width: 100%;
+	padding-top: 2em;
+}
+
+figcaption {
+	text-align: center;
+	font-size: .75em;
+	padding-top: 2em;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1220px)
 {
 	#nav_menu {
         display: none;
@@ -81,7 +163,21 @@ nav ul::after {
         display: block;
     }
     .slicknav_menu {
-        background-color: #800000 !important;	
+        background-color: black !important;	
 	}
 
+	main {
+		flex-direction: column;
+	}
+	
+	main section {
+		order: 1;
+		float: none;
+	}
+
+	main aside {
+		order: 2;
+		float: none;
+		padding-top: 20px;
+	}
 }

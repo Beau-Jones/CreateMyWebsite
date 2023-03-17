@@ -1,5 +1,9 @@
+
+
+/* CSS for Lists, hover and body */
+
 a:hover {
-    color: rgb(255, 0, 0);
+    color: purple;
     background-color: rgb(149, 149, 149);
 }
 
@@ -37,10 +41,11 @@ nav ul li a {
 	width: 310px;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	background-color: #800000;
+	background-color: purple;
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
+	border-radius: 50%;
 }
 
 nav ul li ul {
@@ -76,8 +81,9 @@ nav ul::after {
 /* Adding grid layout to main elements of webpage */
 
 main {
-	height: 1200px;
-	max-width: 60%;
+	height: 100%;
+	max-width: 100%;
+	background-color:bisque;
 	align-items: center;
 	justify-items: center;
 	margin: auto;
@@ -92,41 +98,59 @@ main {
 	"mage warlock"
 }
 
-div img {
-	height: 250px;
+div {
 	width: 100%;
+}
+
+div h1 {
+	padding: .5em;
+	font-size: 3em;;
+}
+
+div p {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.25em;
+	padding: .5em;
 }
 
 #marks {
 	grid-area: marks;
+	background-color:darkkhaki;
 }
 
 #bm {
 	grid-area: bm;
+	background-color:darkgreen;
 }
 
 #ele {
 	grid-area: ele;
+	background-color:blue;
 }
 
 #balance {
 	grid-area: balance;
+	background-color:antiquewhite;
 }
 
 #shadow {
 	grid-area: shadow;
+	background-color:blueviolet;
 }
 
 #devastation {
 	grid-area: devastation;
+	background-color:darkslategrey;
 }
 
 #mage {
 	grid-area: mage;
+	background: linear-gradient(90deg, Red 0%, white 50%, blue 100%);
 }
 
 #warlock {
 	grid-area: warlock;
+	background: linear-gradient(90deg, purple 0%, lavender 50%, magenta 100%);
 }
 
 #mobile_menu {
@@ -142,7 +166,7 @@ div img {
         display: block;
     }
     .slicknav_menu {
-        background-color: #800000 !important;	
+        background-color: black !important;	
 	}
 
 }

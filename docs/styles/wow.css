@@ -2,12 +2,14 @@
     font-size: 3em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: black;
 }
 
 p {
     font-size: 18px;
 }
+
+/* CSS for Lists */
 
 ul li {
     font-size: 2em;
@@ -19,7 +21,7 @@ ul > li {
 }
 
 a:hover {
-    color: rgb(255, 0, 0);
+    color: black;
     background-color: rgb(149, 149, 149);
 }
 
@@ -27,6 +29,9 @@ main ul {
     background: linear-gradient(120deg, white 0%, red 100%);
     padding: 20px 20px;
 }
+
+
+/* CSS for Heading of Home page including image */
 
 #intro {
     background-color:rgb(173, 173, 173);
@@ -37,7 +42,6 @@ main ul {
 
 }
 
-
 body {
     max-width: 1285px;
 	margin: auto;
@@ -46,8 +50,7 @@ body {
 
 #wowlogo {
 	height: 100%;
-	width: 50%;
-	margin-left: 325px;
+	width: 100%;
 	
 }
 
@@ -70,10 +73,11 @@ nav ul li a {
 	width: 310px;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	background-color: #800000;
+	background-color: black;
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
+	border-radius: 50%;
 }
 
 nav ul li ul {
@@ -97,7 +101,7 @@ nav ul::after {
 }
 
 #current {
-	color: rgb(0, 0, 0);	
+	color: gold;	
 }
 
 #mobile_menu {
@@ -113,6 +117,6 @@ nav ul::after {
         display: block;
     }
     .slicknav_menu {
-        background-color: #800000 !important;	
+        background-color: black !important;	
 	}
 }
